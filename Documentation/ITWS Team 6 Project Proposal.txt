@@ -1,0 +1,73 @@
+﻿Ben Kudarauksas, Alex Santos, Khloe Sakai
+
+
+This application is intended to act like a simple file sharing
+service between two paired devices that does not store the file
+on a server. It allows for anonymous file sharing between users,
+close to how a torrent works. This also has the use-case of sharing
+files between your phone and computer quickly without the need to
+upload to google drive, or email the files to yourself to get it
+on your computer. 
+
+This application serves anyone who wants to quickly and efficiently
+transfer files between multiple devices. An example of this is if
+you want to upload a picture to your computer, instead of plugging
+your phone into your computer and downloading the image off your
+phone you can simply get a one time pairing code and then upload
+your file to the website and then download the file off the
+website on your computer.
+
+This application differs from others as it allows users to upload
+files without creating an account and files are stored for a single
+download and then removed. Other websites usually force the user to
+create a free account to use their service. They also tend to create
+temporary links that exist for days at a time whereas our application
+will only host the file until the transfer is complete. We will also
+use a pairing code to pair devices then download the file rather
+than providing the user with a link to download the file.
+This makes the process faster and easier for the user as they do not
+need to type in a whole url to the file, or end up using a service to
+get the link from one device to another. Some similar websites are linked below:
+https://www.file.io/                https://fex.net/
+https://tmpfiles.org/                https://filebin.net/
+
+The idea was inspired by Apple’s Airdrop system but since only products
+in the Apple ecosystem can share files like that with each other, the
+next logical step would be to create a tool that can do that between
+Apple products and non-Apple products like PC’s, servers, etc. I found
+myself running into issues where I needed to quickly share a photo or a
+PDF with myself from my iPhone to my PC but I had no convenient way to
+do it. Some work arounds include setting up a Discord server to upload the
+files to, or emailing them to yourself, but these come with their own
+set of issues. 1. They are kind of inconvenient, especially emailing them
+to yourself. 2. They have limits for the file sizes which are very small if you don't pay for
+Nitro on Discord or have limited google drive space. This aims to solve
+those issues by making it convenient, with large size limitations due to it not
+being stored on the server for long, and by nature secure, so 
+all your sensitive PDF’s, personal photos, etc aren't able to be easily downloaded 
+for a second time and leaked.
+
+The website will consist of two main pages and a few popups.
+- The main page, where you have
+   - A space for file uploads
+   - A spot to input a code to pair
+   - Your code to get files sent to
+   - A button to send the file (no alerts are given to the user who sends a file)
+   - A popup to alert of a successful connection between devices
+   - A popup to alert that a file has been sent which contains a download link
+   - An “About the Project” page, which is linked to the main page
+   and has information about the project.
+
+The primary area of focus is Area 5 as this site revolves around uploading
+data from one device to another temporarily in the session storage of the clients involved
+so it can be accessed by another device. The secondary area of focus is Area 1 as we strive to make
+the site simple and easy to use for the user. We want to minimize the time
+and friction between uploading and obtaining a file. A clean UI/UX is what
+allows for this functionality. We chose to take on the approach that less is more
+for this website's design.
+
+
+Team Member Roles:
+Ben - Backend 
+Alex - Full Stack/Project Manager
+Khloe - UI Designer/Frontend

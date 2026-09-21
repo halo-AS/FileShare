@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+   <title>FileShare</title>
+</head>
+<body>
+   <!-- Header Section -->
+   <div class="header-box">
+      <h1>FileShare</h1>
+      <a href="about/about.html">About This Project</a>
+   </div>
+   <!-- Main Section -->
+    <div class="main-box">
+      <h1>Share Files</h1>
+      <p>
+         Upload a file from one device and download it on another using a simple pairing code.
+         <br>No accounts, no file storage on a server, just a quick and secure file transfer.
+      </p>
+      <div class="util-box">
+         <div class="upload-box">
+            <img src="imgs/cloud-arrow-up-solid-full.svg" alt="A cloud with arrow inside" width="75px" height="75px">
+            <h1>Upload File</h1>
+            <p>Select a file to upload</p>
+            <label for="fileInput" id="upload-btn">Choose File</label>
+            <input type="file" id="fileInput">
+         </div>
+         <div class="pairing-box">
+            <img src="imgs/qrcode-solid-full.svg" alt="A qrcode" width="75px" height="75px">
+            <h1>Enter Pairing Code</h1>
+            <p>Enter the other user's code to connect to their device</p>
+            <label for="joinKey"></label>
+            <input type="text" id="joinKey" maxlength="4" placeholder="Enter Code">
+            <br>
+            <button id="joinBtn">Pair</button>
+         </div>
+      </div>
+      <!-- Explanation Section -->
+       <h3>Your Code:</h3>
+       <p id="hostCode">....</p>
+         <button id="sendFileBtn">Send File</button>
+    </div>
+    <!-- File download popup -->
+     <div id="file-popup" class="hidden">
+      <div id="popup-content-down">
+         <button id="close-btn-down">&times;</button>
+         <h2 id="file-alert-txt">New File Received</h2>
+         <a id="file-download" href="#" download>Download</a>
+      </div>
+     </div>
+     <!-- Connection popup -->
+     <div id="connection-popup" class="hidden">
+      <div id="popup-content-con">
+         <button id="close-btn-con">&times;</button>
+         <h2 id="connection-alert-txt">Connection Success!</h2>
+         <button id="acknowledge-btn">Okay</button>
+      </div>
+     </div>
+     <script src="scripts/fileShare.js"></script>
+</body>
+</html>

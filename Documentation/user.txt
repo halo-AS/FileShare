@@ -1,0 +1,12 @@
+Persona - A technologically proficient young man or woman focused on efficiency. 
+
+Scenario - This young man or woman wants to quickly share files between their mobile device
+and their computer. However, there exist no means of quick and smooth file sharing between
+their devices. All services require you to get a link in order to access the uploaded file,
+or they require you to spend time creating an account to access the site's services. This
+creates frustration, and takes up their highly valued time.
+
+Our solution - A simple website that requires no user sign-ups, and provides the user a
+simple pairing code to download their file. This eliminates the time spent setting up an 
+account, and removes the frustration of finding a way to send the download link from one
+device to another.

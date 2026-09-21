@@ -1,0 +1,12 @@
+You can find the hosted version on  https://kudarbrpi.eastus.cloudapp.azure.com/final
+
+To set it up yourself on a local machine, download php (https://www.php.net/downloads.php)
+extract it to wherever
+then add it to path on windows (C:\php) or wherever you extracted it
+next go into the project folder and run "php -S localhost:8000" in the directory
+go to http://localhost:8000/ on your browser
+
+note: there is an upload size limitation, if a file does not send, check console and it will say if there was an size error.
+
+
+to set it up on azure, just clone the repo, then navigate to the index.html file in the project directory and it should work out of the box
